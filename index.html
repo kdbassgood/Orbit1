@@ -1,132 +1,49 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Orbit | متجر الطاقة الشمسية</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Cairo', sans-serif;
-      background: #f8f8f8;
-      color: #222;
-    }
-    header {
-      background-color: #007c4d;
-      padding: 30px;
-      text-align: center;
-      color: #fff;
-    }
-    nav {
-      background-color: #005c3d;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 15px;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      background-image: url('https://images.unsplash.com/photo-1607344521413-6a6cdbf071e9');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
-    }
-    .product {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-    .product a {
-      display: inline-block;
-      margin-top: 10px;
-      background: #007c4d;
-      color: white;
-      padding: 8px 16px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 0.9em;
-    }
-    .contact, .order {
-      background: #f1f1f1;
-      border-radius: 10px;
-      padding: 30px;
-      max-width: 500px;
-      margin: auto;
-    }
-    input, textarea {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-family: 'Cairo', sans-serif;
-    }
-    button {
-      background: #007c4d;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1em;
-    }
-    footer {
-      background: #222;
-      color: #aaa;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Cairo', sans-serif; background: #f8f8f8; color: #222; }
+    header { background-color: #007c4d; padding: 30px; text-align: center; color: #fff; }
+    nav { background-color: #005c3d; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 15px; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    .hero { background-image: url('https://images.unsplash.com/photo-1607344521413-6a6cdbf071e9'); background-size: cover; background-position: center; color: white; padding: 100px 20px; text-align: center; }
+    .hero h1 { font-size: 3em; margin-bottom: 10px; }
+    .section { padding: 60px 20px; text-align: center; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
+    .product { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); text-align: center; }
+    .product img { width: 100%; max-height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+    .product a { display: inline-block; margin-top: 10px; background: #007c4d; color: white; padding: 8px 16px; text-decoration: none; border-radius: 6px; font-size: 0.9em; }
+    .contact, .order { background: #f1f1f1; border-radius: 10px; padding: 30px; max-width: 500px; margin: auto; }
+    input, textarea { width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-family: 'Cairo', sans-serif; }
+    button { background: #007c4d; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 1em; }
+    footer { background: #222; color: #aaa; text-align: center; padding: 20px; margin-top: 40px; }
   </style>
 </head>
 <body>
   <header>
     <h1>Orbit | الطاقة الشمسية للجميع</h1>
     <p>حلول مبتكرة لتوليد الطاقة من الشمس</p>
-  </header>  <nav>
+  </header>
+
+  <nav>
     <a href="#home">الرئيسية</a>
     <a href="#products">منتجاتنا</a>
     <a href="#order">طلب شراء</a>
     <a href="#about">من نحن</a>
     <a href="#contact">اتصل بنا</a>
-  </nav>  <section class="hero" id="home">
+  </nav>
+
+  <section class="hero" id="home">
     <h1>نحو مستقبل أنظف وأكثر استدامة</h1>
     <p>منتجات طاقة شمسية عالية الكفاءة – بطاريات، ألواح، محولات</p>
-  </section>  <section class="section" id="products">
+  </section>
+
+  <section class="section" id="products">
     <h2>منتجاتنا</h2>
     <div class="products">
       <div class="product">
@@ -148,7 +65,9 @@
         <a href="#order">اطلب الآن</a>
       </div>
     </div>
-  </section>  <section class="section" id="order">
+  </section>
+
+  <section class="section" id="order">
     <h2>طلب شراء</h2>
     <div class="order">
       <form>
@@ -161,10 +80,14 @@
         <button type="submit">إرسال الطلب</button>
       </form>
     </div>
-  </section>  <section class="section" id="about">
+  </section>
+
+  <section class="section" id="about">
     <h2>من نحن</h2>
     <p>Orbit هي شركة رائدة في توفير حلول الطاقة الشمسية المتكاملة. نحن نؤمن بإمكانية توفير طاقة نظيفة للجميع ونسعى لتوفير أعلى جودة بأسعار مناسبة.</p>
-  </section>  <section class="section" id="contact">
+  </section>
+
+  <section class="section" id="contact">
     <h2>تواصل معنا</h2>
     <div class="contact">
       <form>
@@ -174,7 +97,9 @@
         <button type="submit">إرسال</button>
       </form>
     </div>
-  </section>  <footer>
+  </section>
+
+  <footer>
     &copy; 2025 Orbit Solar. جميع الحقوق محفوظة.
   </footer>
 </body>
